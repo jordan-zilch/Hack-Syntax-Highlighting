@@ -1,0 +1,27 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Hack Machine Language
+scopeName: source.Hack
+fileTypes: [asm]
+uuid: 754cd4c1-8d25-45af-83fe-cf7b685f044e
+
+patterns:
+- name: constant.numeric
+  match: \@
+  comment: Matches @ and everything after
+
+- name: comment.line.double-slash
+  match: //.*
+  comment: Matches //comments
+
+- name: keyword.operator
+  match: =|\+|-
+  comment: Matches operands
+
+- name: entity.name.function
+  match: \(\w*\)
+  comment: Matches label definitions
+
+- name: support.function
+  match: ((D|0);)J[A-z]{2}
+  comment: Matches jump commands
