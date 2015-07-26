@@ -6,7 +6,11 @@ Hack.tmLanguage is what you want to actually get the syntax highlighting. Hack.Y
 
 #What is matched
 Operands - Plus, minus, equals
+
 Comments (//)
+
 A-instructions
+
 Label definitions
+
 Jump commands
